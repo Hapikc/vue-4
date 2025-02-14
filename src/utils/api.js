@@ -1,11 +1,14 @@
 const API = process.env.VUE_APP_API;
+console.log('API URL:', API); // Добавьте эту строку для отладки
+
+
 
 export const loginRequest = (user) => {
     return new Promise((resolve, reject) => {
         fetch(`${API}/login`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json; charset=utf-8',
+                'Content-Type': 'application/json;charset=utf-8',
             },
             body: JSON.stringify(user),
         })
@@ -16,3 +19,4 @@ export const loginRequest = (user) => {
             });
     });
 };
+
