@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero-section">
-      <img src="@/assets/default-product.jpg" alt="Приветственная картинка" class="hero-image" />
+
       <div class="welcome-text">
         <h1>Добро пожаловать в магазин Dominus Nox</h1>
         <p>
@@ -71,6 +71,6 @@ export default {
 }
 
 .shop-now-button:hover {
-  background-color: rgba(0, 0, 255, .2);
+  background-color: pink;
 }
 </style>

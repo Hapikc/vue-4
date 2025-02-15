@@ -1,7 +1,7 @@
 <template>
   <div class="orders">
     <h2>Оформленные заказы</h2>
-    <button @click="goBack" class="back-button">Назад</button>
+    <router-link to="/home" class="back-button">Назад</router-link>
     <div v-if="orders.length === 0" class="empty-orders">
       У вас пока нет оформленных заказов.
     </div>
@@ -43,20 +43,22 @@ export default {
 
 .back-button {
   background-color: rgba(11, 156, 49, .2);
+  text-decoration: none;
   color: black;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 20px;
+
 }
 
 .back-button:hover {
-  background-color: #0056b3;
+  background-color: pink;
 }
 
 .empty-orders {
+  margin-top: 20px;
   font-size: 18px;
   color: gray;
   text-align: center;

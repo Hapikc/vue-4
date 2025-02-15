@@ -32,6 +32,12 @@ const routes = [
     beforeEnter: ifNotAuthenticated,
   },
   {
+    path: '/signup',
+    name: 'Signup',
+    component: () => import('../components/Register.vue'),
+    beforeEnter: ifNotAuthenticated,
+  },
+  {
     path: '/products',
     name: 'Products',
     component: () => import('../components/ProductsList.vue'),

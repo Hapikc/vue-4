@@ -3,7 +3,6 @@
     <ul class="nav-list">
       <li><router-link to="/main">Главная</router-link></li>
       <li><router-link to="/products">Каталог товаров</router-link></li>
-
       <li>
         <router-link to="/cart">
           Корзина
@@ -11,6 +10,8 @@
         </router-link>
       </li>
       <li><router-link to="/orders">Оформленные заказы</router-link></li>
+      <li><router-link to="/signup">Регистрация</router-link></li>
+      <li><router-link to="/login">Вход в систему</router-link></li>
     </ul>
   </nav>
 </template>
@@ -45,6 +46,7 @@ export default {
   position: relative;
 }
 
+
 .nav-list li a {
   color: black;
   text-decoration: none;
@@ -52,7 +54,7 @@ export default {
 }
 
 .nav-list li a:hover {
-  color: black;
+  color: red;
 }
 
 .cart-count {

@@ -71,13 +71,13 @@ export default {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: rgba(11, 156, 49, .2);
+  color: black;
   border: none;
   cursor: pointer;
 }
 button:hover {
-  background-color: #0056b3;
+  background-color: pink;
 }
 hr {
   margin: 10px 0;
